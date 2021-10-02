@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F40BD602706FCFD00B2B06A /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F40BD5F2706FCFD00B2B06A /* ViewModel.swift */; };
+		7F40BD622706FEDF00B2B06A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F40BD612706FEDF00B2B06A /* Model.swift */; };
 		7F7C91992704C02100F962B1 /* Rock_Paper_ScissorsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7C91982704C02100F962B1 /* Rock_Paper_ScissorsApp.swift */; };
 		7F7C919B2704C02100F962B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7C919A2704C02100F962B1 /* ContentView.swift */; };
 		7F7C919D2704C02700F962B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F7C919C2704C02700F962B1 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F40BD5F2706FCFD00B2B06A /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		7F40BD612706FEDF00B2B06A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		7F7C91952704C02100F962B1 /* Rock Paper Scissors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rock Paper Scissors.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F7C91982704C02100F962B1 /* Rock_Paper_ScissorsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rock_Paper_ScissorsApp.swift; sourceTree = "<group>"; };
 		7F7C919A2704C02100F962B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +57,8 @@
 			children = (
 				7F7C91982704C02100F962B1 /* Rock_Paper_ScissorsApp.swift */,
 				7F7C919A2704C02100F962B1 /* ContentView.swift */,
+				7F40BD5F2706FCFD00B2B06A /* ViewModel.swift */,
+				7F40BD612706FEDF00B2B06A /* Model.swift */,
 				7F7C919C2704C02700F962B1 /* Assets.xcassets */,
 				7F7C919E2704C02700F962B1 /* Preview Content */,
 			);
@@ -138,7 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F7C919B2704C02100F962B1 /* ContentView.swift in Sources */,
+				7F40BD602706FCFD00B2B06A /* ViewModel.swift in Sources */,
 				7F7C91992704C02100F962B1 /* Rock_Paper_ScissorsApp.swift in Sources */,
+				7F40BD622706FEDF00B2B06A /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
