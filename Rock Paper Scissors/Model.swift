@@ -20,3 +20,8 @@ enum ResultImage: String {
     case lose = "lose"
     case tryAgain = "tryagain"
 }
+
+enum GameMode {
+    case single
+    case double
+}

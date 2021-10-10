@@ -60,7 +60,7 @@ class GameViewModeli: ObservableObject {
             Timer.scheduledTimer(withTimeInterval: 0.15, repeats: true) { timer in
                 number += 1
                 withAnimation(.easeInOut(duration: 0.2)) {
-                self.selected = number
+                    self.selected = number
                     UINotificationFeedbackGenerator().notificationOccurred(.warning)
                 }
                 if number == 4 {
@@ -70,5 +70,77 @@ class GameViewModeli: ObservableObject {
             }
         }
     }
-        
 }
+
+class DoubleGameViewModeli: ObservableObject {
+    @Published var doubleSelected = (0, 0)
+    @Published var doubleImageResult: (Images, Images) = (.rock, .rock)
+    @Published var playersReady = (false, false)
+    @Published var startGame = false
+    @Published var doubleScore = (0, 0)
+    
+    @Published var selected = 0
+    
+    func spin() {
+        prepareImage()
+    }
+    
+    func updateScore() {
+        //        if resultOfSpin == .win {
+        //            firstScore += 1
+        //        } else if resultOfSpin == .lose {
+        //            secondScore += 1
+        //        }
+        
+        let p1 = doubleSelected.0
+        let p2 = doubleSelected.1
+        
+        if p1 == 1 && p2 == 2 {
+            doubleScore.0 += 1
+        } else if p1 == 1 && p2 == 3 {
+            doubleScore.1 += 1
+        } else if p1 == 2 && p2 == 1 {
+            doubleScore.1 += 1
+        } else if p1 == 2 && p2 == 3 {
+            doubleScore.0 += 1
+        } else if p1 == 3 && p2 == 1 {
+            doubleScore.0 += 1
+        } else if p1 == 3 && p2 == 2 {
+            doubleScore.1 += 1
+        }
+    }
+    
+    private func prepareImage() {
+        switch doubleSelected.0 {
+        case 1: doubleImageResult.0 = .paper
+        case 2: doubleImageResult.0 = .rock
+        case 3: doubleImageResult.0 = .scissors
+        default: doubleImageResult.0 = .empty
+        }
+        switch doubleSelected.1 {
+        case 1: doubleImageResult.1 = .paper
+        case 2: doubleImageResult.1 = .rock
+        case 3: doubleImageResult.1 = .scissors
+        default: doubleImageResult.1 = .empty
+        }
+    }
+    
+    func forgetChooseAnimation() {
+        if selected == 0 {
+            var number = 0
+            Timer.scheduledTimer(withTimeInterval: 0.15, repeats: true) { timer in
+                number += 1
+                withAnimation(.easeInOut(duration: 0.2)) {
+                    self.selected = number
+                    UINotificationFeedbackGenerator().notificationOccurred(.warning)
+                }
+                if number == 4 {
+                    timer.invalidate()
+                    self.selected = 0
+                }
+            }
+        }
+    }
+}
+
+

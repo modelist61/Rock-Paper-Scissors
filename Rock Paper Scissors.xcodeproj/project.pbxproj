@@ -10,9 +10,12 @@
 		7F40BD602706FCFD00B2B06A /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F40BD5F2706FCFD00B2B06A /* ViewModel.swift */; };
 		7F40BD622706FEDF00B2B06A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F40BD612706FEDF00B2B06A /* Model.swift */; };
 		7F7C91992704C02100F962B1 /* Rock_Paper_ScissorsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7C91982704C02100F962B1 /* Rock_Paper_ScissorsApp.swift */; };
-		7F7C919B2704C02100F962B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7C919A2704C02100F962B1 /* ContentView.swift */; };
+		7F7C919B2704C02100F962B1 /* SinglePlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7C919A2704C02100F962B1 /* SinglePlayerView.swift */; };
 		7F7C919D2704C02700F962B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F7C919C2704C02700F962B1 /* Assets.xcassets */; };
 		7F7C91A02704C02700F962B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F7C919F2704C02700F962B1 /* Preview Assets.xcassets */; };
+		7F81FA8827136A1200AB1E6C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F81FA8727136A1200AB1E6C /* ContentView.swift */; };
+		7F81FA8A271387DB00AB1E6C /* CharacterPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F81FA89271387DA00AB1E6C /* CharacterPickerView.swift */; };
+		7F929C57271037B50045F9CB /* TwoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F929C56271037B50045F9CB /* TwoPlayerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,9 +23,12 @@
 		7F40BD612706FEDF00B2B06A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		7F7C91952704C02100F962B1 /* Rock Paper Scissors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rock Paper Scissors.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F7C91982704C02100F962B1 /* Rock_Paper_ScissorsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rock_Paper_ScissorsApp.swift; sourceTree = "<group>"; };
-		7F7C919A2704C02100F962B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7F7C919A2704C02100F962B1 /* SinglePlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePlayerView.swift; sourceTree = "<group>"; };
 		7F7C919C2704C02700F962B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F7C919F2704C02700F962B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7F81FA8727136A1200AB1E6C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7F81FA89271387DA00AB1E6C /* CharacterPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterPickerView.swift; sourceTree = "<group>"; };
+		7F929C56271037B50045F9CB /* TwoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoPlayerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +62,12 @@
 			isa = PBXGroup;
 			children = (
 				7F7C91982704C02100F962B1 /* Rock_Paper_ScissorsApp.swift */,
-				7F7C919A2704C02100F962B1 /* ContentView.swift */,
+				7F81FA8727136A1200AB1E6C /* ContentView.swift */,
+				7F7C919A2704C02100F962B1 /* SinglePlayerView.swift */,
+				7F929C56271037B50045F9CB /* TwoPlayerView.swift */,
 				7F40BD5F2706FCFD00B2B06A /* ViewModel.swift */,
 				7F40BD612706FEDF00B2B06A /* Model.swift */,
+				7F929C58271038110045F9CB /* In Work */,
 				7F7C919C2704C02700F962B1 /* Assets.xcassets */,
 				7F7C919E2704C02700F962B1 /* Preview Content */,
 			);
@@ -71,6 +80,14 @@
 				7F7C919F2704C02700F962B1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7F929C58271038110045F9CB /* In Work */ = {
+			isa = PBXGroup;
+			children = (
+				7F81FA89271387DA00AB1E6C /* CharacterPickerView.swift */,
+			);
+			path = "In Work";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,8 +160,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F7C919B2704C02100F962B1 /* ContentView.swift in Sources */,
+				7F7C919B2704C02100F962B1 /* SinglePlayerView.swift in Sources */,
+				7F929C57271037B50045F9CB /* TwoPlayerView.swift in Sources */,
+				7F81FA8A271387DB00AB1E6C /* CharacterPickerView.swift in Sources */,
 				7F40BD602706FCFD00B2B06A /* ViewModel.swift in Sources */,
+				7F81FA8827136A1200AB1E6C /* ContentView.swift in Sources */,
 				7F7C91992704C02100F962B1 /* Rock_Paper_ScissorsApp.swift in Sources */,
 				7F40BD622706FEDF00B2B06A /* Model.swift in Sources */,
 			);
@@ -283,6 +303,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -295,7 +316,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -313,6 +334,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -325,7 +347,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
